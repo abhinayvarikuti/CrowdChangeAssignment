@@ -1,0 +1,95 @@
+[
+  {
+    "id": 1,
+    "name": "New Place Restaurant",
+    "description": "Suspendisse finibus ante quis mi viverra, sit amet tempor ante volutpat. Quisque ultrices nibh ac lacinia facilisis. Nulla eu tincidunt ligula. Nulla non arcu sed lorem cursus elementum.",
+    "address": "4910 Bloor St",
+    "image": "box-1.jpg",
+    "open_at": "10:00",
+    "close_at": "16:00",
+    "status": "closed",
+    "categories": [
+      "Restaurants",
+      "Bars & Pubs"
+    ],
+    "rating": 4.9,
+    "created_at": "2022-03-01 10:00:00"
+  },
+  {
+    "id": 2,
+    "name": "Grand Bistro",
+    "description": " Nunc placerat condimentum consectetur.",
+    "address": "100 Main Str",
+    "image": "box-2.jpg",
+    "open_at": "8:00",
+    "close_at": "3:00",
+    "status": "open",
+    "categories": [
+      "Restaurants"
+    ],
+    "rating": 4.5,
+    "created_at": "2022-03-01 10:00:00"
+  },
+  {
+    "id": 3,
+    "name": "Pizz Oven",
+    "description": "Ut tincidunt elit eget rutrum maximus. Vivamus eget justo lorem. ",
+    "address": "20th Ave",
+    "image": "box-3.jpg",
+    "open_at": "22:00",
+    "close_at": "3:00",
+    "status": "open",
+    "categories": [
+      "Restaurants",
+      "Shopping Malls"
+    ],
+    "rating": 4.2,
+    "created_at": "2022-03-02 10:00:00"
+  },
+  {
+    "id": 4,
+    "name": "Petit Cafe",
+    "description": "Nunc aliquet hendrerit molestie. Donec ultricies et erat sit amet auctor. Integer dignissim dictum dui non sollicitudin.",
+    "address": "90 Dundas Str",
+    "image": "box-4.jpg",
+    "open_at": "8:00",
+    "close_at": "12:00",
+    "status": "open",
+    "categories": [
+      "Restaurants"
+    ],
+    "rating": 4.5,
+    "created_at": "2022-02-01 10:00:00"
+  },
+  {
+    "id": 5,
+    "name": "Green Steakhouse",
+    "description": "Praesent placerat, elit a maximus aliquet, risus lectus sodales risus, at tincidunt nisl ex tempus sem.",
+    "address": "85 Park Ave",
+    "image": "box-5.jpg",
+    "open_at": "10:00",
+    "close_at": "12:00",
+    "status": "closed",
+    "categories": [
+      "Restaurants"
+    ],
+    "rating": 4.7,
+    "created_at": "2022-01-01 10:00:00"
+  },
+  {
+    "id": 6,
+    "name": "Cosmo Pub",
+    "description": "Nulla id mauris vitae lacus dapibus auctor ut quis eros. In luctus urna at tortor pellentesque, sit amet luctus nunc mollis.",
+    "address": "5019 Queens Ave",
+    "image": "box-6.jpg",
+    "open_at": "10:00",
+    "close_at": "22:00",
+    "status": "open",
+    "categories": [
+      "Restaurants",
+      "Bars & Pubs"
+    ],
+    "rating": 3.5,
+    "created_at": "2011-03-01 10:00:00"
+  }
+]

@@ -1,0 +1,36 @@
+
+h1{
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.icon-span{
+    font-size: 36px
+}
+form{
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.26);
+}
+
+input[list] + div[list] span
+{
+    background: #000 !important;
+}
+.categoryDiv ul{
+    position: absolute;
+    background: #1d1d1d;
+    width: 100%;
+    /* bottom: 0; */
+    transition: all .5s ease-in-out;
+    padding: 0px 0px;
+    list-style-type: none;
+}
+
+.categoryDiv ul li{
+    padding: 10px 15px;
+    margin-bottom: 5px;
+}
+.categoryDiv ul li:hover{
+    background-color:#ff5581;
+}
+

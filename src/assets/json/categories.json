@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Restaurants"
+  },
+  {
+    "id": 2,
+    "name": "Bars & Pubs"
+  },
+  {
+    "id": 3,
+    "name": "Shopping Malls"
+  },
+  {
+    "id": 4,
+    "name": "Hotels"
+  },
+  {
+    "id": 5,
+    "name": "Food & Drinks"
+  },
+  {
+    "id": 6,
+    "name": "Home Delivery"
+  },
+  {
+    "id": 7,
+    "name": "Commercial Shops"
+  }
+]

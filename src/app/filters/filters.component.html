@@ -1,0 +1,48 @@
+<!-- 
+    This Tab Contains Category and Ratings Filter
+ -->
+
+
+
+<div>
+    <h3>
+        Category Filter
+    </h3>
+    <ul>
+        <li *ngFor = "let category of Categories; let i = index">
+            <div class="form-check">
+                <input 
+                class="form-check-input" 
+                type="checkbox" 
+                value="" 
+                id="flexCheckDefault" 
+                (change)="onCheck($event,category.id)"
+                [checked]="SelectedCategoryFilter == category.id"
+                >
+                <label class="form-check-label" for="flexCheckDefault">
+                  {{category.name}}
+                </label>
+              </div>
+        </li>
+    </ul>
+    <h3>
+        Ratings
+    </h3>
+    <ul>
+        <li *ngFor = "let rating of RatingFilters; let i = index">
+            <div class="form-check">
+                <input 
+                class="form-check-input" 
+                type="checkbox" 
+                value="" 
+                id="flexCheckDefault1"
+                [checked]="SelectedRatingFilter == rating.id"
+                (change)="onRatingCheck($event,rating.id)"
+                >
+                <label class="form-check-label" for="flexCheckDefault">
+                 <span class="me-2">{{rating.name}} </span> <span class="starSpan" *ngFor="let i of counter(rating.id)"><i class="fa fa-star" ></i></span> <span class="starSpan" *ngFor="let i of counter(5 - rating.id)"><i class="fa fa-star-o"></i></span>
+                </label>
+              </div>
+        </li>
+    </ul>
+</div>

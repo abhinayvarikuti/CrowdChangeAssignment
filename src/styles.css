@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+.primary-color{
+    color :#ff5581;
+}
+
+.bg-primary-color{
+    background:#ff5581;
+}
+.cursor-pointer{
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+li{
+    list-style-type:none ;
+    margin: 15px 0;
+}
+
+ul{
+    padding: 0;
+    margin : 30px 0
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 0 !important;
+}
+
+.form-check-input:checked {
+    background-color: #ff5581;
+    border-color: #ff5581;
+}
+.starSpan{
+    color: #ffc600;
+    padding: 0px 3px 0px 0px;
+}

@@ -1,0 +1,73 @@
+<!-- 
+
+    Search component that contains code of category selection and location selection
+ -->
+
+
+
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-10">
+        <div class="row">
+            <div class="col-12">
+                <span class="d-block icon-span primary-color">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                 </span>
+                 <h1>New York</h1>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-5">
+                        <div class="">
+                            <label for="" class="form-label">Search Category</label>
+                            <div class="categoryDiv position-relative" >
+                            <input 
+                            class="form-control bg-transparent text-white" 
+                            placeholder="Search categories"
+                            [value]="SearchText"
+                            (input) = "onSearch($event)"
+                            (click)="onInputClick()"
+                            (clickElsewhere)="closeCategorySearch()"
+                            />
+                                <ul *ngIf="ShowCategories">
+                                    <li *ngFor = "let category of FilteredCategories" (click)="onCategorySelect(category)">
+                                        {{category.name}}
+                                    </li>
+                                </ul>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="">
+                      
+                                <div class="">
+                                    <label for="" class="form-label">Search City</label>
+                                    <div class="categoryDiv position-relative" >
+                                    <input 
+                                    class="form-control bg-transparent text-white" 
+                                    placeholder="Search Cities"
+                                    [value]="SearchCityText"
+                                    (input) = "onCitySearch($event)"
+                                    (clickElsewhere)="closeCitySearch()"
+                                    (click)="onCityInputClick()" 
+                                    />
+                                        <ul *ngIf="ShowCities">
+                                            <li *ngFor = "let city of FilteredCities" (click)="onCitySelect(city)">
+                                                {{city.name}}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                
+                          </div>
+                    </div>
+                    </div>
+                    <div class="col-2 align-self-end">
+                        <div class="">
+                         <button class="btn bg-primary-color text-white w-100" routerLink="/page2">Search Now</button>
+                          </div>
+                    </div>    
+                </div> 
+            </form>               
+        </div>
+    </div>
+</div>
