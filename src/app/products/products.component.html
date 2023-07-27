@@ -1,7 +1,6 @@
 <!-- 
     Products Component
  -->
-
 <div class="row mb-4 pb-4">
     <div class="col-12">
         <div class="dropdown float-end">
@@ -10,31 +9,27 @@
               <span class="dropdown-text">{{DropDownText}}</span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li *ngFor="let filter of topfilters"><a class="dropdown-item cursor-pointer" (click) = "sortProducts(filter?.id,filter?.name)">{{filter.name}}</a></li>
-              <!-- <li><a class="dropdown-item">Oldest</a></li> -->
+              <li *ngFor="let filter of topfilters;"><a class="dropdown-item cursor-pointer" (click) = "sortProducts(filter?.id,filter?.name)">{{filter.name}}</a></li>
             </ul>
           </div>
     </div>
 </div>
 <div class="row mt-4 p-4">
-    <div class="col-4 my-3   pb-2 " *ngFor="let product of FilteredProducts;let i= index;">
+    <div class="col-lg-4 col-xs-12 my-3 pb-2" *ngFor="let product of FilteredProducts;">
         <div class="product-content position-relative">
             <div class="img-div">
                 <span class="rating">{{product.rating}}</span>
-                <span class="category">{{product.categories.join(',')}}</span>
-                <img src = "../../assets/images/box-1.jpg" />
+                <span class="category">{{product.categories.join(', ')}}</span>
+                <img src = {{imageUrl}}{{product.image}} />
             </div>
-            <div class="p-3 ">
+            <div class="p-3">
                 <h5>{{product.name}}</h5>
                 <p class="primary-color">{{product.address}}</p>
                 <p class="pb-5">{{product.description}}</p>
-                <button class="btn text-white align-button" [ngClass]="product.status == 'open' ? 'shop-open' : 'shop-close'"> 
-                    <span *ngIf="product.status == 'open'">Open until {{product.close_at}}</span>
-                    <span *ngIf="product.status != 'open'"> Opens Tomorrow at {{product.open_at}}</span>
+                <button class="btn text-white align-button" [ngClass]="product.status === 'open' ? 'shop-open' : 'shop-close'"> 
+                    <span> {{ (product.status === 'open') ? 'Open until ' + product.close_at : 'Opens Tomorrow at ' + product.open_at }}</span>
                 </button>
             </div>  
-
         </div>                         
     </div>
-
 </div>

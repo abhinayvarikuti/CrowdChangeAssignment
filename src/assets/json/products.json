@@ -56,9 +56,10 @@
     "close_at": "12:00",
     "status": "open",
     "categories": [
-      "Restaurants"
+      "Restaurants",
+      "Hotels"
     ],
-    "rating": 4.5,
+    "rating": 2.5,
     "created_at": "2022-02-01 10:00:00"
   },
   {
